@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "noImplicitReturns": false,
+        "removeComments": false,
+        "strictNullChecks": false,
+        "outDir": "build",
+        "lib": [
+            "es2015",
+            "es6",
+            "es7",
+            "dom"
+        ]
+    },
+    "exclude": [
+        "dist",
+        "build",
+        "node_modules",
+        "generator/**/*",
+        "**/__tests__/*"
+    ]
+}

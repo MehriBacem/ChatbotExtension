@@ -1,0 +1,20 @@
+
+
+service: aws-nodejs 
+
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+functions:
+  CheckIn:
+    handler: src/CheckIn.default
+    events:
+     - http:
+         path: checkIn
+         method: POST
